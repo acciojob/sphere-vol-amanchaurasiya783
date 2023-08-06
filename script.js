@@ -4,7 +4,7 @@ function volume_sphere() {
 	let radius = document.getElementById("radius");
 	radius = parseInt(radius.value);
 	let volume = 3.14*4*radius*radius*radius/3;
-	document.getElementById("volume").value = volume;
+	document.getElementById("volume").value = Math.round(volume);
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere();
