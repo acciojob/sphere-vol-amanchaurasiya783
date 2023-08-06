@@ -1,10 +1,10 @@
 function volume_sphere() {
-    //Write your code here
-	let radius = document.getElementById("radius").innerHTML;
-	radius = parseInt(radius);
+	//Write your code here
+	event.preventDefault();
+	let radius = document.getElementById("radius");
+	radius = parseInt(radius.value);
 	let volume = 3.14*4*radius*radius*radius/3;
-	return volume;
-	document.getElementById("volume").innerHTML = volume;
+	document.getElementById("volume").value = volume;
 } 
 
-window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+window.onload = document.getElementById('MyForm').onsubmit = volume_sphere();
