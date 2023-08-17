@@ -1,6 +1,6 @@
 function volume_sphere() {
 	//Write your code here
-	preventDefault();
+	event.preventDefault();
 	let radius = document.getElementById("radius");
 	radius = parseInt(radius.value);
 	let volume = 22*4*radius*radius*radius/(3*7);
